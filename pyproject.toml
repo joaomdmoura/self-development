@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "self_development"
+version = "0.1.0"
+description = "self_development using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = "^0.30.11" }
+
+[tool.poetry.scripts]
+self_development = "self_development.main:run"
+train = "self_development.main:train"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

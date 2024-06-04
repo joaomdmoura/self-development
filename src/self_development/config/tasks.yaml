@@ -1,0 +1,46 @@
+analyze_journal_task:
+  description: >
+    Carefully read through the provided journal entry and identify actionable tasks
+    that the user can undertake. Focus on understanding the context and emotions
+    expressed in the journal. Your goal is to extract meaningful actions that
+    align with the user’s self-development goals. Make sure to highlight any recurring
+    themes or significant points that can help in formulating a comprehensive action plan.
+
+
+    ### Journal Entry Example:
+
+    {journal}
+  expected_output: >
+    A detailed list of actionable tasks extracted from the journal entry,
+    organized by priority and relevance.
+
+research_task:
+  description: >
+    Conduct an in-depth research based on the actionable tasks identified from the journal entry.
+    Search for the most relevant and inspiring materials online that align with the user’s
+    self-development goals. Given the current year is 2024, ensure the information is up-to-date
+    and includes the latest trends and insights. Look for articles, books, videos, and any
+    other resources that can provide value and guidance.
+  expected_output: >
+    A list of at least 10 bullet points summarizing the most relevant and interesting
+    information and resources related to the actionable tasks identified,
+    including links and brief descriptions of each resource.
+
+compile_actions_task:
+  description: >
+    Take the actionable tasks extracted from the journal and the research findings,
+    and compile them into a structured plan of next actions for the user. Ensure the plan
+    is clear, detailed, and easy to follow. Organize the tasks in a logical order and provide
+    any necessary context or instructions that will help the user take action. Your goal is to
+    create a comprehensive and motivating action plan that the user can use to advance their
+    self-development journey.
+
+
+    ### Journal Entry Example:
+
+    {journal}
+  expected_output: >
+    A final document formatted as a markdown content, containing a detailed list of next actions
+    for the user. The document should include a clear structure with headings, subheadings, and
+    bullet points where appropriate, ensuring it is easy to read and follow. It shoudl also mention
+    interesting resoruces for the user
